@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"strings"
 
-	"tonbyte.com/ton-storage-interface/src/entity"
+	"github.com/tonbyte/ton-storage-interface/src/entity"
 )
 
 func (s *CppStorage) List() ([]entity.BagID, error) {

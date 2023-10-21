@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"tonbyte.com/ton-storage-interface/src/entity"
+	"github.com/tonbyte/ton-storage-interface/src/entity"
 )
 
 func (s *TonutilsStorage) Info(bagID string) (interface{}, error) {

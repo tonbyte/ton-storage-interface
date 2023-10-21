@@ -3,7 +3,7 @@ package storage
 import (
 	"fmt"
 
-	"tonbyte.com/ton-storage-interface/src/entity"
+	"github.com/tonbyte/ton-storage-interface/src/entity"
 )
 
 type TonStorage interface {

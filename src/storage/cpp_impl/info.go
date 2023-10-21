@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"tonbyte.com/ton-storage-interface/src/entity"
-	"tonbyte.com/ton-storage-interface/src/storage"
+	"github.com/tonbyte/ton-storage-interface/src/entity"
+	"github.com/tonbyte/ton-storage-interface/src/storage"
 )
 
 func (s *CppStorage) Info(bagID string) (interface{}, error) {

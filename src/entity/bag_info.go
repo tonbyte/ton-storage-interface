@@ -11,9 +11,9 @@ type BagInfoCommon struct {
 type BagInfoCpp struct {
 	Torrent struct {
 		BagInfoCommon
-		FilesCount       string `json:"files_count"`
-		TotalSize        string `json:"total_size"`
-		DownloadedSize   string `json:"downloaded_size"`
+		FilesCount       string `json:"files_count,omitempty"`
+		TotalSize        string `json:"total_size,omitempty"`
+		DownloadedSize   string `json:"downloaded_size,omitempty"`
 		Hash             string `json:"hash,omitempty"`
 		IncludedSize     string `json:"included_size,omitempty"`
 		Flags            int32  `json:"flags,omitempty"`
@@ -27,10 +27,10 @@ type BagInfoCpp struct {
 
 type BagInfoTonutils struct {
 	BagInfoCommon
-	Files          []TonutilsStorageFile `json:"files"`
-	FilesCount     int64                 `json:"files_count"`
-	TotalSize      int64                 `json:"size"`
-	DownloadedSize int64                 `json:"downloaded"`
+	Files          []TonutilsStorageFile `json:"files,omitempty"`
+	FilesCount     int64                 `json:"files_count,omitempty"`
+	TotalSize      int64                 `json:"size,omitempty"`
+	DownloadedSize int64                 `json:"downloaded,omitempty"`
 	BagPiecesNum   int64                 `json:"bag_pieces_num,omitempty"`
 	HeaderLoaded   bool                  `json:"header_loaded,omitempty"`
 	InfoLoaded     bool                  `json:"info_loaded,omitempty"`
